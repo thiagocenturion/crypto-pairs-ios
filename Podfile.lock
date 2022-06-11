@@ -1,0 +1,39 @@
+PODS:
+  - Domain (0.1.0):
+    - RxCocoa (~> 6.5.0)
+    - RxSwift (~> 6.5.0)
+  - Domain/Tests (0.1.0):
+    - RxCocoa (~> 6.5.0)
+    - RxSwift (~> 6.5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - Domain (from `LocalPods/Domain`)
+  - Domain/Tests (from `LocalPods/Domain`)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Domain:
+    :path: LocalPods/Domain
+
+SPEC CHECKSUMS:
+  Domain: a6d47f1a13d4752f45922fc2a3d823b5644d0c54
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: d1f329f0ddf770bd53469cccb51015b325395a6d
+
+COCOAPODS: 1.11.3

@@ -15,14 +15,35 @@
 
 default_platform(:ios)
 
+simulator = "iPhone 12 Pro"
+
+all_modules_schemes = [
+  'Domain-Example'
+]
+
 platform :ios do
 
-  # Public lanes
+  ### TESTS ###
+  desc "Runs all unit and UI tests and tests if all modules are buildable"
+  desc "Use `fastlane test`"
 
-  desc "Runs tests"
-  lane :tests do
+  lane :test do |options|
 
-    run_tests(devices: ["iPhone 12 Pro"], 
-              scheme: "CryptoPairs")
+    # Check if all modules are buildable
+    all_modules_schemes.each do |scheme|
+      UI.message "Testing if module #{scheme} is buildable"
+      scan(
+        scheme: scheme,
+        device: simulator,
+        build_for_testing: true
+      )
+    end
+
+    # Run all unit and UI tests, and test if App is buildable
+    scan(
+      scheme: "CryptoPairs",
+      device: simulator
+    )
+
   end
 end
