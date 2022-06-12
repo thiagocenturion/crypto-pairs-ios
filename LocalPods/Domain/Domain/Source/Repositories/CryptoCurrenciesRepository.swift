@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-protocol CryptoCurrenciesRepository {
+public protocol CryptoCurrenciesRepository {
 
     func fetchCryptoCurrenciesList() -> Single<[CryptoCurrency]>
 }

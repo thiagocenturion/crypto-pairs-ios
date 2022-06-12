@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint Domain.podspec' to ensure this is a
+# Be sure to run `pod lib lint Networking.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Domain'
+  s.name             = 'Networking'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Domain.'
+  s.summary          = 'A short description of Networking.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,31 +21,28 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/thiagocenturion/Domain'
+  s.homepage         = 'https://github.com/thiagocenturion/Networking'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'thiagocenturion' => 'thiagocenturion@me.com' }
-  s.source           = { :git => 'https://github.com/thiagocenturion/Domain.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/thiagocenturion/Networking.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Domain/Source/**/*.{swift}'
+  s.source_files = 'Networking/Source/**/*.{swift}'
 
-  s.resources = "Domain/Source/**/*.{xcassets, json, storyboard, xib, xcdatamodeld}"
-
-  s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Domain/Tests/**/*.{swift}'
-  end
+  s.resources = "Networking/Source/**/*.{xcassets, json, storyboard, xib, xcdatamodeld}"
 
   s.dependency 'RxSwift', '~> 6.0'
   s.dependency 'RxCocoa', '~> 6.0'
+  s.dependency 'Moya/RxSwift', '~> 15.0'
   
   # s.resource_bundles = {
-  #   'Domain' => ['Domain/Assets/*.png']
+  #   'Networking' => ['Networking/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-#   s.dependency 'AFNetworking', '~> 2.3'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end

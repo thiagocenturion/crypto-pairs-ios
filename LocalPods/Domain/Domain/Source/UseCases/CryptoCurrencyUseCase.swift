@@ -13,20 +13,20 @@ public protocol CryptoCurrencyUseCaseProtocol {
     func cryptoCurrencies() -> Single<[CryptoCurrency]>
 }
 
-final class CryptoCurrencyUseCase: CryptoCurrencyUseCaseProtocol {
+final public class CryptoCurrencyUseCase: CryptoCurrencyUseCaseProtocol {
 
     // MARK: Properties
     private let cryptoCurrenciesRepository: CryptoCurrenciesRepository
     private var currencies: [CryptoCurrency]?
 
     // MARK: - Initialiation
-    init(cryptoCurrenciesRepository: CryptoCurrenciesRepository) {
+    public init(cryptoCurrenciesRepository: CryptoCurrenciesRepository) {
 
         self.cryptoCurrenciesRepository = cryptoCurrenciesRepository
     }
 
     // MARK: - CryptoCurrencyUseCaseProtocol
-    func cryptoCurrencies() -> Single<[CryptoCurrency]> {
+    public func cryptoCurrencies() -> Single<[CryptoCurrency]> {
 
         if let currencies = self.currencies {
             return .just(currencies)

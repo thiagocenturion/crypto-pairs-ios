@@ -12,13 +12,18 @@
 		6181207D2BF32FCB4D00802B /* libPods-CryptoPairsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2775AB7AB452CFCC84E6F1E9 /* libPods-CryptoPairsUITests.a */; };
 		6765A52F285385C40070ABC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A52E285385C40070ABC5 /* AppDelegate.swift */; };
 		6765A531285385C40070ABC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A530285385C40070ABC5 /* SceneDelegate.swift */; };
-		6765A533285385C40070ABC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A532285385C40070ABC5 /* ViewController.swift */; };
-		6765A536285385C40070ABC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6765A534285385C40070ABC5 /* Main.storyboard */; };
 		6765A538285385C60070ABC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6765A537285385C60070ABC5 /* Assets.xcassets */; };
 		6765A53B285385C60070ABC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6765A539285385C60070ABC5 /* LaunchScreen.storyboard */; };
-		6765A546285385C60070ABC5 /* CryptoPairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A545285385C60070ABC5 /* CryptoPairsTests.swift */; };
 		6765A550285385C60070ABC5 /* CryptoPairsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A54F285385C60070ABC5 /* CryptoPairsUITests.swift */; };
 		6765A552285385C60070ABC5 /* CryptoPairsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6765A551285385C60070ABC5 /* CryptoPairsUITestsLaunchTests.swift */; };
+		6774D4EA285559FB000652AA /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6774D4E9285559FB000652AA /* DependencyContainer.swift */; };
+		6774D4EC28555A3F000652AA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6774D4EB28555A3F000652AA /* ViewControllerFactory.swift */; };
+		6774D4F028555BB6000652AA /* ViewControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6774D4EF28555BB6000652AA /* ViewControllerFactoryTests.swift */; };
+		67F6D1CE285560C200BB63D8 /* DefaultTickersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1CD285560C200BB63D8 /* DefaultTickersRepository.swift */; };
+		67F6D1D12855626A00BB63D8 /* DefaultTickersRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1D02855626A00BB63D8 /* DefaultTickersRepositoryTests.swift */; };
+		67F6D1D52855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1D42855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift */; };
+		67F6D1D72855684100BB63D8 /* crypto_currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F6D1D62855684100BB63D8 /* crypto_currencies.json */; };
+		67F6D1D928556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +50,21 @@
 		6765A52B285385C40070ABC5 /* CryptoPairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoPairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6765A52E285385C40070ABC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6765A530285385C40070ABC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6765A532285385C40070ABC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6765A535285385C40070ABC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6765A537285385C60070ABC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6765A53A285385C60070ABC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6765A53C285385C60070ABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6765A541285385C60070ABC5 /* CryptoPairsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoPairsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6765A545285385C60070ABC5 /* CryptoPairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPairsTests.swift; sourceTree = "<group>"; };
 		6765A54B285385C60070ABC5 /* CryptoPairsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoPairsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6765A54F285385C60070ABC5 /* CryptoPairsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPairsUITests.swift; sourceTree = "<group>"; };
 		6765A551285385C60070ABC5 /* CryptoPairsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPairsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6774D4E9285559FB000652AA /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		6774D4EB28555A3F000652AA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		6774D4EF28555BB6000652AA /* ViewControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryTests.swift; sourceTree = "<group>"; };
+		67F6D1CD285560C200BB63D8 /* DefaultTickersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTickersRepository.swift; sourceTree = "<group>"; };
+		67F6D1D02855626A00BB63D8 /* DefaultTickersRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTickersRepositoryTests.swift; sourceTree = "<group>"; };
+		67F6D1D42855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrenciesRepository.swift; sourceTree = "<group>"; };
+		67F6D1D62855684100BB63D8 /* crypto_currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crypto_currencies.json; sourceTree = "<group>"; };
+		67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrenciesRepositoryTests.swift; sourceTree = "<group>"; };
 		730890A771412BEA61D06C34 /* Pods_CryptoPairs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPairs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AE9A4B2EB6AA1CC4643DD8 /* Pods-CryptoPairsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPairsUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoPairsUITests/Pods-CryptoPairsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		862CE20B01262021D63700A1 /* Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig"; path = "Target Support Files/Pods-CryptoPairs-CryptoPairsUITests/Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,13 +128,9 @@
 		6765A52D285385C40070ABC5 /* CryptoPairs */ = {
 			isa = PBXGroup;
 			children = (
-				6765A52E285385C40070ABC5 /* AppDelegate.swift */,
-				6765A530285385C40070ABC5 /* SceneDelegate.swift */,
-				6765A532285385C40070ABC5 /* ViewController.swift */,
-				6765A534285385C40070ABC5 /* Main.storyboard */,
-				6765A537285385C60070ABC5 /* Assets.xcassets */,
-				6765A539285385C60070ABC5 /* LaunchScreen.storyboard */,
-				6765A53C285385C60070ABC5 /* Info.plist */,
+				67F6D1CC2855609900BB63D8 /* Data */,
+				6774D4E8285559C1000652AA /* Application */,
+				6774D4E728555958000652AA /* Supporting Files */,
 			);
 			path = CryptoPairs;
 			sourceTree = "<group>";
@@ -132,7 +138,7 @@
 		6765A544285385C60070ABC5 /* CryptoPairsTests */ = {
 			isa = PBXGroup;
 			children = (
-				6765A545285385C60070ABC5 /* CryptoPairsTests.swift */,
+				6774D4ED28555B90000652AA /* Specs */,
 			);
 			path = CryptoPairsTests;
 			sourceTree = "<group>";
@@ -144,6 +150,63 @@
 				6765A551285385C60070ABC5 /* CryptoPairsUITestsLaunchTests.swift */,
 			);
 			path = CryptoPairsUITests;
+			sourceTree = "<group>";
+		};
+		6774D4E728555958000652AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1D62855684100BB63D8 /* crypto_currencies.json */,
+				6765A537285385C60070ABC5 /* Assets.xcassets */,
+				6765A539285385C60070ABC5 /* LaunchScreen.storyboard */,
+				6765A53C285385C60070ABC5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6774D4E8285559C1000652AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6765A52E285385C40070ABC5 /* AppDelegate.swift */,
+				6765A530285385C40070ABC5 /* SceneDelegate.swift */,
+				6774D4E9285559FB000652AA /* DependencyContainer.swift */,
+				6774D4EB28555A3F000652AA /* ViewControllerFactory.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6774D4ED28555B90000652AA /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1CF2855626100BB63D8 /* Data */,
+				6774D4EE28555B96000652AA /* Application */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		6774D4EE28555B96000652AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6774D4EF28555BB6000652AA /* ViewControllerFactoryTests.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		67F6D1CC2855609900BB63D8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1CD285560C200BB63D8 /* DefaultTickersRepository.swift */,
+				67F6D1D42855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		67F6D1CF2855626100BB63D8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1D02855626A00BB63D8 /* DefaultTickersRepositoryTests.swift */,
+				67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		8A4D35635A2B41C10D1FDDD4 /* Pods */ = {
@@ -158,7 +221,6 @@
 				83AE9A4B2EB6AA1CC4643DD8 /* Pods-CryptoPairsUITests.debug.xcconfig */,
 				8F85D848965F03402C0621CB /* Pods-CryptoPairsUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -247,6 +309,7 @@
 					};
 					6765A540285385C60070ABC5 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 						TestTargetID = 6765A52A285385C40070ABC5;
 					};
 					6765A54A285385C60070ABC5 = {
@@ -282,7 +345,7 @@
 			files = (
 				6765A53B285385C60070ABC5 /* LaunchScreen.storyboard in Resources */,
 				6765A538285385C60070ABC5 /* Assets.xcassets in Resources */,
-				6765A536285385C40070ABC5 /* Main.storyboard in Resources */,
+				67F6D1D72855684100BB63D8 /* crypto_currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,9 +456,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6765A533285385C40070ABC5 /* ViewController.swift in Sources */,
 				6765A52F285385C40070ABC5 /* AppDelegate.swift in Sources */,
+				6774D4EC28555A3F000652AA /* ViewControllerFactory.swift in Sources */,
+				6774D4EA285559FB000652AA /* DependencyContainer.swift in Sources */,
+				67F6D1D52855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift in Sources */,
 				6765A531285385C40070ABC5 /* SceneDelegate.swift in Sources */,
+				67F6D1CE285560C200BB63D8 /* DefaultTickersRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +469,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6765A546285385C60070ABC5 /* CryptoPairsTests.swift in Sources */,
+				6774D4F028555BB6000652AA /* ViewControllerFactoryTests.swift in Sources */,
+				67F6D1D928556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift in Sources */,
+				67F6D1D12855626A00BB63D8 /* DefaultTickersRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,14 +500,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6765A534285385C40070ABC5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6765A535285385C40070ABC5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6765A539285385C60070ABC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -575,10 +635,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoPairs/Info.plist;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -604,10 +664,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoPairs/Info.plist;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -629,15 +689,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thiagocenturion.CryptoPairsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoPairs.app/CryptoPairs";
@@ -650,11 +717,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TTSKDZ455K;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thiagocenturion.CryptoPairsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

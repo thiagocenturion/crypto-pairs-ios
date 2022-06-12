@@ -1,25 +1,39 @@
 PODS:
+  - Alamofire (5.6.1)
   - Domain (0.1.0):
-    - RxCocoa (~> 6.5.0)
-    - RxSwift (~> 6.5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - Domain/Tests (0.1.0):
-    - RxCocoa (~> 6.5.0)
-    - RxSwift (~> 6.5.0)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - Networking (0.1.0):
+    - Moya/RxSwift (~> 15.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
 
 DEPENDENCIES:
   - Domain (from `LocalPods/Domain`)
   - Domain/Tests (from `LocalPods/Domain`)
-  - RxCocoa (= 6.5.0)
-  - RxSwift (= 6.5.0)
+  - Moya/RxSwift (~> 15.0)
+  - Networking (from `LocalPods/Networking`)
+  - RxCocoa (= 6.0)
+  - RxSwift (= 6.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Moya
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -27,13 +41,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Domain:
     :path: LocalPods/Domain
+  Networking:
+    :path: LocalPods/Networking
 
 SPEC CHECKSUMS:
-  Domain: a6d47f1a13d4752f45922fc2a3d823b5644d0c54
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Domain: 4d5106fd0a1ff8f2a85d8e4d9dd245ad8c105e77
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Networking: 8417d623dfb6a8677e2c2c585c56d1410a7d4362
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
 
-PODFILE CHECKSUM: d1f329f0ddf770bd53469cccb51015b325395a6d
+PODFILE CHECKSUM: c3f65770ba8963aef7806fb7fa8140ab24f43e44
 
 COCOAPODS: 1.11.3

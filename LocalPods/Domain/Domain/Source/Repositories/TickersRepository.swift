@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-protocol TickersRepository {
+public protocol TickersRepository {
 
     func fetchTickersList(symbols: [String]) -> Single<[Ticker]>
 }
