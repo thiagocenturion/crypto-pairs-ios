@@ -12,9 +12,18 @@ def networking_pod
   pod 'Networking', :path => 'LocalPods/Networking'
 end
 
+def uicomponents_pod
+  pod 'UIComponents', :path => 'LocalPods/UIComponents'
+end
+
+def branding_pod
+  pod 'Branding', :path => 'LocalPods/Branding'
+end
+
 def development_pods
   domain_pod
   networking_pod
+  uicomponents_pod
 end
 
 def rxswift_pod
@@ -63,6 +72,21 @@ target 'Networking_Example' do
   networking_pod
   rxswift_pod
   rxmoya_pod
+end
+
+target 'UIComponents_Example' do
+  use_frameworks!
+  project 'LocalPods/UIComponents/Example/UIComponents.xcodeproj'
+
+  uicomponents_pod
+  branding_pod
+end
+
+target 'Branding_Example' do
+  use_frameworks!
+  project 'LocalPods/Branding/Example/Branding.xcodeproj'
+
+  branding_pod
 end
 
 post_install do |installer_representation|

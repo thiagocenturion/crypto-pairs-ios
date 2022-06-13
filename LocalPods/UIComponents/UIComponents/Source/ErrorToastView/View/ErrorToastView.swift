@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
+import Branding
 
 public final class ErrorToastView: UIView {
 
@@ -74,6 +73,9 @@ private extension ErrorToastView {
     }
 
     func configureConstraints() {
-        messageLabel.edge(insets: Constants.Insets.margin, to: self)
+        messageLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: Constants.Insets.margin.top).isActive = true
+        messageLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: Constants.Insets.margin.left).isActive = true
+        messageLabel.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: Constants.Insets.margin.bottom).isActive = true
+        messageLabel.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: Constants.Insets.margin.right).isActive = true
     }
 }

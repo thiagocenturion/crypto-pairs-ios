@@ -7,6 +7,8 @@
 
 import UIKit
 import Kingfisher
+import Branding
+import UIComponents
 
 final class TickerCell: UITableViewCell {
 

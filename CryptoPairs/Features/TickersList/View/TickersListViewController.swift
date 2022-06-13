@@ -8,6 +8,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Branding
+import UIComponents
 
 final class TickersListViewController: UIViewController {
 

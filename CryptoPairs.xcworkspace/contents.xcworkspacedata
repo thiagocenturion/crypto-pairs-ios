@@ -13,4 +13,10 @@
    <FileRef
       location = "group:LocalPods/Networking/Example/Networking.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LocalPods/UIComponents/Example/UIComponents.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalPods/Branding/Example/Branding.xcodeproj">
+   </FileRef>
 </Workspace>

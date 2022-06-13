@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Branding
 
 public struct CurrencyLabelViewModel: LabelViewModel {
 

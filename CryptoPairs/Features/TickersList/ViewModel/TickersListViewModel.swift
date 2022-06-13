@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import Reachability
 import RxReachability
+import UIComponents
 
 final class TickersListViewModel {
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Branding
 
 public struct ErrorToastViewModel {
 

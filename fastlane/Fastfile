@@ -18,7 +18,10 @@ default_platform(:ios)
 simulator = "iPhone 12 Pro"
 
 all_modules_schemes = [
-  'Domain-Example'
+  'Domain-Example',
+  'Networking-Example',
+  'Branding-Example',
+  'UIComponents-Example'
 ]
 
 platform :ios do
