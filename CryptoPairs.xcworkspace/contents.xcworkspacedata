@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CryptoPairs.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalPods/Domain/Example/Domain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalPods/Networking/Example/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalPods/UIComponents/Example/UIComponents.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalPods/Branding/Example/Branding.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,102 @@
+[
+    {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+    },
+    {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+    },
+    {
+        "symbol": "CHSB",
+        "name": "SwissBorg",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2499.png"
+    },
+    {
+        "symbol": "LTC",
+        "name": "Litecoin",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
+    },
+    {
+        "symbol": "XRP",
+        "name": "XRP",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/52.png"
+    },
+    {
+        "symbol": "DSH",
+        "name": "Dashcoin",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/660.png"
+    },
+    {
+        "symbol": "RRT",
+        "name": "Recovery Right Token",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/16819.png"
+    },
+    {
+        "symbol": "EOS",
+        "name": "EOS",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1765.png"
+    },
+    {
+        "symbol": "SAN",
+        "name": "Santiment Network Token",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1807.png"
+    },
+    {
+        "symbol": "DAT",
+        "name": "Datum",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2283.png"
+    },
+    {
+        "symbol": "SNT",
+        "name": "Status",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1759.png"
+    },
+    {
+        "symbol": "DOGE",
+        "name": "Dogecoin",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+    },
+    {
+        "symbol": "LUNA",
+        "name": "Terra",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/20314.png"
+    },
+    {
+        "symbol": "MATIC",
+        "name": "Polygon",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+    },
+    {
+        "symbol": "NEXO",
+        "name": "Nexo",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2694.png"
+    },
+    {
+        "symbol": "OCEAN",
+        "name": "Ocean Protocol",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3911.png"
+    },
+    {
+        "symbol": "BEST",
+        "name": "Bitpanda Ecosystem Token",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/4361.png"
+    },
+    {
+        "symbol": "AAVE",
+        "name": "Aave",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/7278.png"
+    },
+    {
+        "symbol": "PLU",
+        "name": "Pluton",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1392.png"
+    },
+    {
+        "symbol": "FIL",
+        "name": "Filecoin",
+        "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2280.png"
+    }
+]
