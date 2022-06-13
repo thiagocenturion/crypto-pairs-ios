@@ -1,4 +1,4 @@
 language: swift
 osx_image: xcode13.3
 script:
-  - bundle install; bundle exec fastlane tests
+  - bundle install; bundle exec fastlane test
