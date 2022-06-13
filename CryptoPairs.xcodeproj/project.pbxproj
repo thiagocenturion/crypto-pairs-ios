@@ -24,6 +24,20 @@
 		67F6D1D52855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1D42855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift */; };
 		67F6D1D72855684100BB63D8 /* crypto_currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 67F6D1D62855684100BB63D8 /* crypto_currencies.json */; };
 		67F6D1D928556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */; };
+		67F6D1DF2855722A00BB63D8 /* TickersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1DE2855722A00BB63D8 /* TickersListViewController.swift */; };
+		67F6D1E12855724300BB63D8 /* TickersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1E02855724300BB63D8 /* TickersListViewModel.swift */; };
+		67F6D1E72855F65B00BB63D8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1E62855F65B00BB63D8 /* UIView+Extension.swift */; };
+		67F6D1F1285603EB00BB63D8 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1F0285603EB00BB63D8 /* ColorPalette.swift */; };
+		67F6D1F52856082E00BB63D8 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1F42856082E00BB63D8 /* Typography.swift */; };
+		67F6D1F928561EFE00BB63D8 /* TickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1F828561EFE00BB63D8 /* TickerCell.swift */; };
+		67F6D1FE28562F8A00BB63D8 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D1FD28562F8A00BB63D8 /* LabelView.swift */; };
+		67F6D2012856339500BB63D8 /* DefaultLabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D2002856339500BB63D8 /* DefaultLabelType.swift */; };
+		67F6D203285633DE00BB63D8 /* DefaultLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D202285633DE00BB63D8 /* DefaultLabelViewModel.swift */; };
+		67F6D2092856450100BB63D8 /* CurrencyLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D2082856450100BB63D8 /* CurrencyLabelViewModel.swift */; };
+		67F6D20F28564A4C00BB63D8 /* PercentageLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D20E28564A4C00BB63D8 /* PercentageLabelViewModel.swift */; };
+		67F6D2112856B4CE00BB63D8 /* TickerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D2102856B4CE00BB63D8 /* TickerCellViewModel.swift */; };
+		67F6D2182856B64A00BB63D8 /* ErrorToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D2172856B64A00BB63D8 /* ErrorToastView.swift */; };
+		67F6D21B2856B82900BB63D8 /* ErrorToastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6D21A2856B82900BB63D8 /* ErrorToastViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +79,20 @@
 		67F6D1D42855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrenciesRepository.swift; sourceTree = "<group>"; };
 		67F6D1D62855684100BB63D8 /* crypto_currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crypto_currencies.json; sourceTree = "<group>"; };
 		67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCurrenciesRepositoryTests.swift; sourceTree = "<group>"; };
+		67F6D1DE2855722A00BB63D8 /* TickersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersListViewController.swift; sourceTree = "<group>"; };
+		67F6D1E02855724300BB63D8 /* TickersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersListViewModel.swift; sourceTree = "<group>"; };
+		67F6D1E62855F65B00BB63D8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		67F6D1F0285603EB00BB63D8 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		67F6D1F42856082E00BB63D8 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		67F6D1F828561EFE00BB63D8 /* TickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCell.swift; sourceTree = "<group>"; };
+		67F6D1FD28562F8A00BB63D8 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		67F6D2002856339500BB63D8 /* DefaultLabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabelType.swift; sourceTree = "<group>"; };
+		67F6D202285633DE00BB63D8 /* DefaultLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLabelViewModel.swift; sourceTree = "<group>"; };
+		67F6D2082856450100BB63D8 /* CurrencyLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabelViewModel.swift; sourceTree = "<group>"; };
+		67F6D20E28564A4C00BB63D8 /* PercentageLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageLabelViewModel.swift; sourceTree = "<group>"; };
+		67F6D2102856B4CE00BB63D8 /* TickerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCellViewModel.swift; sourceTree = "<group>"; };
+		67F6D2172856B64A00BB63D8 /* ErrorToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorToastView.swift; sourceTree = "<group>"; };
+		67F6D21A2856B82900BB63D8 /* ErrorToastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorToastViewModel.swift; sourceTree = "<group>"; };
 		730890A771412BEA61D06C34 /* Pods_CryptoPairs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPairs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AE9A4B2EB6AA1CC4643DD8 /* Pods-CryptoPairsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPairsUITests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoPairsUITests/Pods-CryptoPairsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		862CE20B01262021D63700A1 /* Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig"; path = "Target Support Files/Pods-CryptoPairs-CryptoPairsUITests/Pods-CryptoPairs-CryptoPairsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +156,12 @@
 		6765A52D285385C40070ABC5 /* CryptoPairs */ = {
 			isa = PBXGroup;
 			children = (
-				67F6D1CC2855609900BB63D8 /* Data */,
+				67F6D1FC28562F1100BB63D8 /* UIComponents */,
+				67F6D1EF285603D900BB63D8 /* Branding */,
+				67F6D1E52855F60300BB63D8 /* Common */,
 				6774D4E8285559C1000652AA /* Application */,
+				67F6D1CC2855609900BB63D8 /* Data */,
+				67F6D1DA285571E400BB63D8 /* Features */,
 				6774D4E728555958000652AA /* Supporting Files */,
 			);
 			path = CryptoPairs;
@@ -207,6 +239,120 @@
 				67F6D1D828556BEE00BB63D8 /* DefaultCryptoCurrenciesRepositoryTests.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		67F6D1DA285571E400BB63D8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1DB285571F300BB63D8 /* TickersList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		67F6D1DB285571F300BB63D8 /* TickersList */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1DD2855720400BB63D8 /* View */,
+				67F6D1DC285571FE00BB63D8 /* ViewModel */,
+			);
+			path = TickersList;
+			sourceTree = "<group>";
+		};
+		67F6D1DC285571FE00BB63D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1E02855724300BB63D8 /* TickersListViewModel.swift */,
+				67F6D2102856B4CE00BB63D8 /* TickerCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67F6D1DD2855720400BB63D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1DE2855722A00BB63D8 /* TickersListViewController.swift */,
+				67F6D1F828561EFE00BB63D8 /* TickerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F6D1E52855F60300BB63D8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1E62855F65B00BB63D8 /* UIView+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67F6D1EF285603D900BB63D8 /* Branding */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1F0285603EB00BB63D8 /* ColorPalette.swift */,
+				67F6D1F42856082E00BB63D8 /* Typography.swift */,
+			);
+			path = Branding;
+			sourceTree = "<group>";
+		};
+		67F6D1FC28562F1100BB63D8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D2122856B50F00BB63D8 /* ErrorToastView */,
+				67F6D1FF2856335A00BB63D8 /* Label */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		67F6D1FF2856335A00BB63D8 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D20D285646E500BB63D8 /* ViewModel */,
+				67F6D20B285646D700BB63D8 /* View */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		67F6D20B285646D700BB63D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D1FD28562F8A00BB63D8 /* LabelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F6D20D285646E500BB63D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D2082856450100BB63D8 /* CurrencyLabelViewModel.swift */,
+				67F6D2002856339500BB63D8 /* DefaultLabelType.swift */,
+				67F6D202285633DE00BB63D8 /* DefaultLabelViewModel.swift */,
+				67F6D20E28564A4C00BB63D8 /* PercentageLabelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67F6D2122856B50F00BB63D8 /* ErrorToastView */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D2192856B81D00BB63D8 /* ViewModel */,
+				67F6D2162856B63500BB63D8 /* View */,
+			);
+			path = ErrorToastView;
+			sourceTree = "<group>";
+		};
+		67F6D2162856B63500BB63D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D2172856B64A00BB63D8 /* ErrorToastView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67F6D2192856B81D00BB63D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D21A2856B82900BB63D8 /* ErrorToastViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8A4D35635A2B41C10D1FDDD4 /* Pods */ = {
@@ -457,11 +603,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				6765A52F285385C40070ABC5 /* AppDelegate.swift in Sources */,
+				67F6D21B2856B82900BB63D8 /* ErrorToastViewModel.swift in Sources */,
+				67F6D1DF2855722A00BB63D8 /* TickersListViewController.swift in Sources */,
+				67F6D1E12855724300BB63D8 /* TickersListViewModel.swift in Sources */,
+				67F6D20F28564A4C00BB63D8 /* PercentageLabelViewModel.swift in Sources */,
+				67F6D2182856B64A00BB63D8 /* ErrorToastView.swift in Sources */,
 				6774D4EC28555A3F000652AA /* ViewControllerFactory.swift in Sources */,
 				6774D4EA285559FB000652AA /* DependencyContainer.swift in Sources */,
+				67F6D1F928561EFE00BB63D8 /* TickerCell.swift in Sources */,
+				67F6D203285633DE00BB63D8 /* DefaultLabelViewModel.swift in Sources */,
 				67F6D1D52855652300BB63D8 /* DefaultCryptoCurrenciesRepository.swift in Sources */,
+				67F6D1E72855F65B00BB63D8 /* UIView+Extension.swift in Sources */,
 				6765A531285385C40070ABC5 /* SceneDelegate.swift in Sources */,
 				67F6D1CE285560C200BB63D8 /* DefaultTickersRepository.swift in Sources */,
+				67F6D2012856339500BB63D8 /* DefaultLabelType.swift in Sources */,
+				67F6D1F52856082E00BB63D8 /* Typography.swift in Sources */,
+				67F6D2112856B4CE00BB63D8 /* TickerCellViewModel.swift in Sources */,
+				67F6D1FE28562F8A00BB63D8 /* LabelView.swift in Sources */,
+				67F6D2092856450100BB63D8 /* CurrencyLabelViewModel.swift in Sources */,
+				67F6D1F1285603EB00BB63D8 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

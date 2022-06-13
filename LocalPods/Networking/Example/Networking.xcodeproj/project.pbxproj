@@ -26,6 +26,9 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		67F6D24D2856D30E00BB63D8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		67F6D24E2856D30E00BB63D8 /* NetworkingServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceSpy.swift; sourceTree = "<group>"; };
+		67F6D24F2856D30E00BB63D8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		707B658C6BEAE390DF3309AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C661E2064CB75E375F9560F2 /* Networking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Networking.podspec; path = ../Networking.podspec; sourceTree = "<group>"; };
 		DF459F16D648978E7E50FEC1 /* Pods-Networking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking_Example.release.xcconfig"; path = "Target Support Files/Pods-Networking_Example/Pods-Networking_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				67F6D24C2856D30E00BB63D8 /* Source */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Networking */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -103,6 +107,17 @@
 				E76D75E8B40D2EE5231B4F4D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		67F6D24C2856D30E00BB63D8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				67F6D24D2856D30E00BB63D8 /* NetworkingService.swift */,
+				67F6D24E2856D30E00BB63D8 /* NetworkingServiceSpy.swift */,
+				67F6D24F2856D30E00BB63D8 /* Endpoint.swift */,
+			);
+			name = Source;
+			path = ../Networking/Source;
 			sourceTree = "<group>";
 		};
 		E1928B821FBE373348BE7E68 /* Frameworks */ = {

@@ -6,6 +6,7 @@ PODS:
   - Domain/Tests (0.1.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - Kingfisher (7.2.3)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -15,9 +16,14 @@ PODS:
     - Moya/RxSwift (~> 15.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - ReachabilitySwift (5.0.0)
   - RxCocoa (6.0.0):
     - RxRelay (= 6.0.0)
     - RxSwift (= 6.0.0)
+  - RxReachability (1.2.1):
+    - ReachabilitySwift (< 6.0, >= 5.0)
+    - RxCocoa (~> 6)
+    - RxSwift (~> 6)
   - RxRelay (6.0.0):
     - RxSwift (= 6.0.0)
   - RxSwift (6.0.0)
@@ -25,16 +31,21 @@ PODS:
 DEPENDENCIES:
   - Domain (from `LocalPods/Domain`)
   - Domain/Tests (from `LocalPods/Domain`)
+  - Kingfisher (~> 7.0)
   - Moya/RxSwift (~> 15.0)
   - Networking (from `LocalPods/Networking`)
   - RxCocoa (= 6.0)
+  - RxReachability (~> 1.2.1)
   - RxSwift (= 6.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Moya
+    - ReachabilitySwift
     - RxCocoa
+    - RxReachability
     - RxRelay
     - RxSwift
 
@@ -47,12 +58,15 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   Domain: 4d5106fd0a1ff8f2a85d8e4d9dd245ad8c105e77
+  Kingfisher: 8c2cbe0c11ea4d481542895112682a99e058468e
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Networking: 8417d623dfb6a8677e2c2c585c56d1410a7d4362
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxReachability: bfd13548bf1dac7a877082d13918a9f39bdb5c18
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
 
-PODFILE CHECKSUM: c3f65770ba8963aef7806fb7fa8140ab24f43e44
+PODFILE CHECKSUM: 6f6fb0ee59cacd28f9bbbb28772c5926a7b82fbf
 
 COCOAPODS: 1.11.3

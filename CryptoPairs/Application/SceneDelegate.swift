@@ -15,13 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let window = UIWindow(windowScene: windowScene)
-        self.window = window
         let navigationController = UINavigationController()
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
+        navigationController.navigationBar.prefersLargeTitles = true
 
-        navigationController.viewControllers = [UIViewController()]
+        let dependencyContainer = DependencyContainer.shared
+        let viewController = dependencyContainer.viewControllerFactory.makeTickersListViewController()
+        navigationController.pushViewController(viewController, animated: false)
+
+        self.window = UIWindow(windowScene: windowScene)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

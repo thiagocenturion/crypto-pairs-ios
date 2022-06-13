@@ -32,7 +32,8 @@ target 'CryptoPairs' do
 
   # Pods for App
   development_pods
-
+  pod 'Kingfisher', '~> 7.0'
+  pod 'RxReachability', '~> 1.2.1'
 end
 
 target 'CryptoPairsTests' do

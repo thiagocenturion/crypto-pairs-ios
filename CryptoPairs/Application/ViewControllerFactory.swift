@@ -25,8 +25,13 @@ final class ViewControllerFactory: ViewControllerFactoryProtocol {
     }
 
     func makeTickersListViewController() -> UIViewController {
-//        let viewModel = TickersListViewModel(networkingService: networkingService)
-//        return TickersListViewController(viewModel: viewModel)
-        return UIViewController()
+        // Static Locale to display only a list of crypto trading pairs with USD, but it can be any
+        let locale = Locale(identifier: "en_US")
+
+        let viewModel = TickersListViewModel(locale: locale,
+                                             tickerUseCase: tickerUseCase,
+                                             cryptoCurrencyUseCase: cryptoCurrencyUseCase)
+
+        return TickersListViewController(viewModel: viewModel)
     }
 }
