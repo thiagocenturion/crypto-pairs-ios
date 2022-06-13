@@ -10,6 +10,10 @@ import Domain
 
 final class DependencyContainer {
 
+    enum Constants {
+        static let cryptoCurrencies = "crypto_currencies"
+    }
+
     static let shared = DependencyContainer()
 
     let viewControllerFactory: ViewControllerFactory
@@ -18,7 +22,7 @@ final class DependencyContainer {
         let tickersRepository = DefaultTickersRepository(networkingServices: networkingService)
         let tickerUseCase = TickerUseCase(tickersRepository: tickersRepository)
 
-        let cryptoCurrenciesRepository = DefaultCryptoCurrenciesRepository()
+        let cryptoCurrenciesRepository = DefaultCryptoCurrenciesRepository(fileName: Constants.cryptoCurrencies)
         let cryptoCurrencyUseCase = CryptoCurrencyUseCase(cryptoCurrenciesRepository: cryptoCurrenciesRepository)
 
         self.viewControllerFactory = ViewControllerFactory(tickerUseCase: tickerUseCase,

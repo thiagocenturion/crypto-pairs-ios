@@ -8,7 +8,7 @@
 import UIKit
 import Branding
 
-public struct CurrencyLabelViewModel: LabelViewModel {
+public struct CurrencyLabelViewModel: LabelViewModel, Equatable {
 
     // MARK: Properties
 
@@ -35,5 +35,15 @@ public struct CurrencyLabelViewModel: LabelViewModel {
         self.textColor = ColorPalette.label
 
         numberFormatter.locale = locale
+    }
+}
+
+// MARK: - Equatable
+
+extension CurrencyLabelViewModel {
+
+    static public func ==(lhs: CurrencyLabelViewModel, rhs: CurrencyLabelViewModel) -> Bool {
+        return lhs.value == rhs.value &&
+        lhs.numberFormatter.locale == rhs.numberFormatter.locale
     }
 }

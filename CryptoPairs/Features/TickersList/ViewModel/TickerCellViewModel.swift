@@ -7,8 +7,9 @@
 
 import Foundation
 import UIComponents
+import Domain
 
-struct TickerCellViewModel {
+struct TickerCellViewModel: Equatable {
 
     // MARK: Properties
 
@@ -20,11 +21,11 @@ struct TickerCellViewModel {
 
     // MARK: - Initialization
 
-    init(title: String, subtitle: String, locale: Locale, price: Float, percent: Float, iconURL: URL?) {
-        self.title = .init(text: title, type: .heading)
-        self.subtitle = .init(text: subtitle, type: .body)
-        self.price = .init(locale: locale, value: price)
-        self.percentage = .init(percent: percent)
-        self.iconURL = iconURL
+    init(ticker: Ticker, cryptoCurrency: CryptoCurrency, locale: Locale) {
+        self.title = .init(text: cryptoCurrency.name, type: .heading)
+        self.subtitle = .init(text: cryptoCurrency.symbol, type: .body)
+        self.price = .init(locale: locale, value: ticker.lastPrice)
+        self.percentage = .init(percent: ticker.dailyChangeRelative * 100)
+        self.iconURL = cryptoCurrency.icon
     }
 }

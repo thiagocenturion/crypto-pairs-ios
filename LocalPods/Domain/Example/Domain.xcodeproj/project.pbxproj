@@ -292,10 +292,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Domain_Example/Pods-Domain_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Domain-framework/Domain.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa-framework/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay-framework/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Domain/Domain.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

@@ -8,7 +8,7 @@
 import UIKit
 import Branding
 
-public struct PercentageLabelViewModel: LabelViewModel {
+public struct PercentageLabelViewModel: LabelViewModel, Equatable {
 
     // MARK: Properties
 

@@ -26,7 +26,46 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "Branding_Example.app"
+            BlueprintName = "Branding_Example"
+            ReferencedContainer = "container:LocalPods/Branding/Example/Branding.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "UIComponents_Example.app"
+            BlueprintName = "UIComponents_Example"
+            ReferencedContainer = "container:LocalPods/UIComponents/Example/UIComponents.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "Domain_Example.app"
+            BlueprintName = "Domain_Example"
+            ReferencedContainer = "container:LocalPods/Domain/Example/Domain.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "Networking_Example.app"
+            BlueprintName = "Networking_Example"
+            ReferencedContainer = "container:LocalPods/Networking/Example/Networking.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6765A52A285385C40070ABC5"
+            BuildableName = "CryptoPairs.app"
+            BlueprintName = "CryptoPairs"
+            ReferencedContainer = "container:CryptoPairs.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -42,30 +81,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6765A54A285385C60070ABC5"
-               BuildableName = "CryptoPairsUITests.xctest"
-               BlueprintName = "CryptoPairsUITests"
+               BlueprintIdentifier = "38857C35B5B311F0A4AD9A5F8283BBEF"
+               BuildableName = "Domain-Unit-Tests.xctest"
+               BlueprintName = "Domain-Unit-Tests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "67F6D27A285750C500BB63D8"
+               BuildableName = "CryptoPairsSnapshotTests.xctest"
+               BlueprintName = "CryptoPairsSnapshotTests"
                ReferencedContainer = "container:CryptoPairs.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD8D5DD1D5668B7A8D1E84D98336A8A0"
-               BuildableName = "Domain-framework-Unit-Tests.xctest"
-               BlueprintName = "Domain-framework-Unit-Tests"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8379A78915C2D785A60EA2FDE33AD1CE"
-               BuildableName = "Domain-library-Unit-Tests.xctest"
-               BlueprintName = "Domain-library-Unit-Tests"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

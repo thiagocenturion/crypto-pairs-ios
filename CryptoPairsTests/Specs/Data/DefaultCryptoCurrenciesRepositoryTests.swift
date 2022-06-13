@@ -39,11 +39,12 @@ final class DefaultCryptoCurrenciesRepositoryTests: XCTestCase {
     }
 
     // MARK: - Tests
-    func testFetchCryptoCurrenciesList() throws {
+
+    func testFetchCryptoCurrenciesListSuccess() throws {
 
         // Given
         let expectation = XCTestExpectation(description: #function)
-        let cryptoCurrenciesRepository = DefaultCryptoCurrenciesRepository()
+        let cryptoCurrenciesRepository = DefaultCryptoCurrenciesRepository(fileName: Constants.File.cryptoCurrencies)
         var result: SingleEvent<[CryptoCurrency]>?
 
         let url = try XCTUnwrap(Bundle.main.url(forResource: Constants.File.cryptoCurrencies, withExtension: "json"))
@@ -62,6 +63,31 @@ final class DefaultCryptoCurrenciesRepositoryTests: XCTestCase {
             expectation.fulfill()
         default:
             XCTFail("Expecting success.")
+        }
+
+        wait(for: [expectation], timeout: Constants.timeout)
+    }
+
+    func testFetchCryptoCurrenciesListError() throws {
+
+        // Given
+        let expectation = XCTestExpectation(description: #function)
+        let cryptoCurrenciesRepository = DefaultCryptoCurrenciesRepository(fileName: "xzy")
+        var result: SingleEvent<[CryptoCurrency]>?
+        let expectedError = CocoaError.error(.fileReadUnknown)
+
+        // When
+        cryptoCurrenciesRepository.fetchCryptoCurrenciesList()
+            .subscribe { result = $0 }
+            .disposed(by: self.disposeBag)
+
+        // Then
+        switch result {
+        case .failure(let error):
+            XCTAssertEqual(error as? CocoaError, expectedError as? CocoaError)
+            expectation.fulfill()
+        default:
+            XCTFail("Expecting failure.")
         }
 
         wait(for: [expectation], timeout: Constants.timeout)

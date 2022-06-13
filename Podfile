@@ -41,20 +41,23 @@ target 'CryptoPairs' do
 
   # Pods for App
   development_pods
-  pod 'Kingfisher', '~> 7.0'
-  pod 'RxReachability', '~> 1.2.1'
-end
-
-target 'CryptoPairsTests' do
-  inherit! :search_paths
-  # Pods for testing
-  development_pods
   rxswift_pod
   rxmoya_pod
-end
+  pod 'Kingfisher', '~> 7.0'
+  pod 'RxReachability', '~> 1.2.1'
 
-target 'CryptoPairsUITests' do
-  # Pods for testing
+  target 'CryptoPairsTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxBlocking', '6.0'
+    pod 'RxTest', '6.0'
+  end
+
+  target 'CryptoPairsSnapshotTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'SnapshotTesting', '~> 1.9.0'
+  end
 end
 
 target 'Domain_Example' do

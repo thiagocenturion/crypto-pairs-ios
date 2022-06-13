@@ -13,14 +13,19 @@ import RxCocoa
 final class DefaultCryptoCurrenciesRepository {
 
     // MARK: Constants
+
     enum Constants {
-        enum File {
-            static let cryptoCurrencies = "crypto_currencies"
-        }
+        static let jsonFileTypeExtension = "json"
     }
 
+    // MARK: Properties
+    let fileName: String
+
     // MARK: - Initialization
-    init() {}
+
+    init(fileName: String) {
+        self.fileName = fileName
+    }
 }
 
 // MARK: - CryptoCurrenciesRepository
@@ -28,18 +33,10 @@ final class DefaultCryptoCurrenciesRepository {
 extension DefaultCryptoCurrenciesRepository: CryptoCurrenciesRepository {
 
     func fetchCryptoCurrenciesList() -> Single<[CryptoCurrency]> {
-        // TODO: - Implement the cryptocurrencies list in the back-end side and fetch it using an API
-        guard let url = Bundle.main.url(forResource: Constants.File.cryptoCurrencies, withExtension: "json") else {
-
-            return .error(CocoaError.error(.fileNoSuchFile))
-        }
-
-        guard let data = try? Data(contentsOf: url) else {
-
-            return .error(CocoaError.error(.fileReadCorruptFile))
-        }
-
-        guard let cryptoCurrencies = try? JSONDecoder().decode([CryptoCurrency].self, from: data) else {
+        // With this  the cryptocurrencies list in the back-end side and fetch it using an API
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: Constants.jsonFileTypeExtension),
+              let data = try? Data(contentsOf: url),
+              let cryptoCurrencies = try? JSONDecoder().decode([CryptoCurrency].self, from: data) else {
 
             return .error(CocoaError.error(.fileReadUnknown))
         }

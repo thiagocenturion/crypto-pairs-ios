@@ -8,15 +8,16 @@
 import XCTest
 
 @testable import CryptoPairs
+@testable import Domain
 
 final class ViewControllerFactoryTests: XCTestCase {
 
     func testMakeTodoListViewController() {
-//        let viewControllerFactory = ViewControllerFactory(tickerUseCase: <#TickerUseCaseProtocol#>,
-//                                                          cryptoCurrencyUseCase: <#CryptoCurrencyUseCaseProtocol#>)
-//
-//        let viewController = viewControllerFactory.makeTickersListViewController()
-//
-//        XCTAssertTrue(viewController is TickersListViewController)
+        let viewControllerFactory = ViewControllerFactory(tickerUseCase: TickerUseCase(tickersRepository: TickersRepositoryStub()),
+                                                          cryptoCurrencyUseCase: CryptoCurrencyUseCase(cryptoCurrenciesRepository: CryptoCurrenciesRepositoryStub()))
+
+        let viewController = viewControllerFactory.makeTickersListViewController()
+
+        XCTAssertTrue(viewController is TickersListViewController)
     }
 }

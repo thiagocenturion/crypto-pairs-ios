@@ -18,6 +18,8 @@ PODS:
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - ReachabilitySwift (5.0.0)
+  - RxBlocking (6.0.0):
+    - RxSwift (= 6.0.0)
   - RxCocoa (6.0.0):
     - RxRelay (= 6.0.0)
     - RxSwift (= 6.0.0)
@@ -28,6 +30,9 @@ PODS:
   - RxRelay (6.0.0):
     - RxSwift (= 6.0.0)
   - RxSwift (6.0.0)
+  - RxTest (6.0.0):
+    - RxSwift (= 6.0.0)
+  - SnapshotTesting (1.9.0)
   - UIComponents (0.1.0):
     - Branding (~> 0.1.0)
 
@@ -38,9 +43,12 @@ DEPENDENCIES:
   - Kingfisher (~> 7.0)
   - Moya/RxSwift (~> 15.0)
   - Networking (from `LocalPods/Networking`)
+  - RxBlocking (= 6.0)
   - RxCocoa (= 6.0)
   - RxReachability (~> 1.2.1)
   - RxSwift (= 6.0)
+  - RxTest (= 6.0)
+  - SnapshotTesting (~> 1.9.0)
   - UIComponents (from `LocalPods/UIComponents`)
 
 SPEC REPOS:
@@ -49,10 +57,13 @@ SPEC REPOS:
     - Kingfisher
     - Moya
     - ReachabilitySwift
+    - RxBlocking
     - RxCocoa
     - RxReachability
     - RxRelay
     - RxSwift
+    - RxTest
+    - SnapshotTesting
 
 EXTERNAL SOURCES:
   Branding:
@@ -72,12 +83,15 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Networking: 8417d623dfb6a8677e2c2c585c56d1410a7d4362
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxBlocking: c025b8c6fe08c5b18c039b5b11d41ec413f8a59e
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
   RxReachability: bfd13548bf1dac7a877082d13918a9f39bdb5c18
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
   UIComponents: c91f88337d2a8b2be513d79815418aefb0759416
 
-PODFILE CHECKSUM: d7b75d0b31b2b03d266b83023c36a1b60c0039df
+PODFILE CHECKSUM: 29bb3c90894eed75d79a7f53fdc6d5726e62a0b0
 
 COCOAPODS: 1.11.3

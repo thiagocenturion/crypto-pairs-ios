@@ -8,7 +8,7 @@
 import UIKit
 import Branding
 
-public struct DefaultLabelViewModel: LabelViewModel {
+public struct DefaultLabelViewModel: LabelViewModel, Equatable {
 
     // MARK: Properties
 

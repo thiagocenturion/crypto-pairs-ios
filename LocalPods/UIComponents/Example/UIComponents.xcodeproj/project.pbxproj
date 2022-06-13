@@ -288,8 +288,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UIComponents_Example/Pods-UIComponents_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Branding-framework/Branding.framework",
-				"${BUILT_PRODUCTS_DIR}/UIComponents-framework/UIComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/Branding/Branding.framework",
+				"${BUILT_PRODUCTS_DIR}/UIComponents/UIComponents.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

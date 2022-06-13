@@ -22,7 +22,7 @@ final class TickersListViewModel {
         static let timeout: RxTimeInterval = .seconds(30)
     }
 
-    // MARK: Properties
+    // MARK: Public Properties
 
     var title: String { "Crypto Marketplace" }
     var searchBarPlaceholder: String { "Type to search" }
@@ -32,17 +32,15 @@ final class TickersListViewModel {
     let query: BehaviorRelay<String> = .init(value: "")
     var cellViewModels: BehaviorRelay<[TickerCellViewModel]> = .init(value: [])
 
-    private let numberFormatter: NumberFormatter = {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
-        return numberFormatter
-    }()
+    var pollingObservable: Observable<Int> {
+        Observable<Int>.interval(Constants.timeIntervalPolling, scheduler: scheduler)
+    }
+
+    // MARK: Private Properties
 
     private let locale: Locale
     private let tickerUseCase: TickerUseCaseProtocol
     private let cryptoCurrencyUseCase: CryptoCurrencyUseCaseProtocol
-
-    private var pollingObservable: Disposable?
 
     private var cryptoCurrencies: [CryptoCurrency] = []
     private let tickers: BehaviorRelay<[Ticker]> = .init(value: [])
@@ -52,11 +50,20 @@ final class TickersListViewModel {
 
     private let disposeBag = DisposeBag()
 
+    private let numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        return numberFormatter
+    }()
+
+    private let scheduler: SchedulerType
+
     // MARK: - Initialization
 
     init(locale: Locale,
          tickerUseCase: TickerUseCaseProtocol,
-         cryptoCurrencyUseCase: CryptoCurrencyUseCaseProtocol) {
+         cryptoCurrencyUseCase: CryptoCurrencyUseCaseProtocol,
+         scheduler: SchedulerType = MainScheduler.instance) {
 
         self.locale = locale
         numberFormatter.locale = locale
@@ -64,17 +71,25 @@ final class TickersListViewModel {
         self.tickerUseCase = tickerUseCase
         self.cryptoCurrencyUseCase = cryptoCurrencyUseCase
 
+        self.scheduler = scheduler
+
         bind()
     }
 }
 
-// MARK: - Methods
+// MARK: - Public Methods
 
 extension TickersListViewModel {
 
     func start() {
         // Fetch all crypto currencies and request for tickers
         fetchCryptoCurrencies()
+            .bind(to: fetchTickers)
+            .disposed(by: disposeBag)
+
+        // Polling to automatically update tickers based on a specific time range
+        pollingObservable
+            .compactMap { [weak self] _ in self?.cryptoCurrencies }
             .bind(to: fetchTickers)
             .disposed(by: disposeBag)
     }
@@ -91,12 +106,6 @@ extension TickersListViewModel {
 private extension TickersListViewModel {
 
     func bind() {
-
-        // Polling to automatically update tickers based on a specific time range
-        pollingObservable = Observable<Int>
-            .interval(Constants.timeIntervalPolling, scheduler: MainScheduler.instance)
-            .compactMap { [weak self] _ in self?.cryptoCurrencies }
-            .bind(to: fetchTickers)
 
         // Reload data for any updates like filtering or disabling search
         reloadData
@@ -117,10 +126,11 @@ private extension TickersListViewModel {
 
         // Cancel the filter state by removing all filtered tickers
         cancelFilter
-            .subscribe(onNext: { [weak self] _ in
+            .do(onNext: { [weak self] _ in
                 self?.filteredTickers.removeAll()
                 self?.isFiltering = false
             })
+            .bind(to: reloadData)
             .disposed(by: disposeBag)
 
         // Reachability handling
@@ -186,12 +196,7 @@ private extension TickersListViewModel {
     func cellViewModel(_ ticker: Ticker) -> TickerCellViewModel? {
         guard let cryptoCurrency = self.cryptoCurrency(ticker) else { return nil }
 
-        return .init(title: cryptoCurrency.name,
-                     subtitle: cryptoCurrency.symbol,
-                     locale: self.locale,
-                     price: ticker.lastPrice,
-                     percent: ticker.dailyChangeRelative * 100,
-                     iconURL: cryptoCurrency.icon)
+        return .init(ticker: ticker, cryptoCurrency: cryptoCurrency, locale: locale)
     }
 
     func ticker(_ cellViewModel: TickerCellViewModel) -> Ticker? {
@@ -199,6 +204,6 @@ private extension TickersListViewModel {
     }
 
     func cryptoCurrency(_ ticker: Ticker) -> CryptoCurrency? {
-        cryptoCurrencies.first(where: { ticker.symbol.contains($0.symbol) })
+        return cryptoCurrencies.first(where: { ticker.symbol.contains($0.symbol) })
     }
 }

@@ -11,6 +11,6 @@ import UIKit
 public enum Typography {
 
     public static var h2: UIFont { return UIFont.boldSystemFont(ofSize: 18) }
-    public static var caption: UIFont { return UIFont.boldSystemFont(ofSize: 18) }
+    public static var caption: UIFont { return UIFont.boldSystemFont(ofSize: 14) }
     public static var regular: UIFont { return UIFont.systemFont(ofSize: 14) }
 }
